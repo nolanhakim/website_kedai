@@ -254,6 +254,41 @@
     margin-top: auto; /* ini bikin harganya selalu nempel bawah */
 }
 
+#minuman .menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+#minuman .menu-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+}
+
+#minuman .menu-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#minuman .menu-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+#minuman .menu-content .price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: auto;
+}
+
+
         /* Delivery Section */
         .delivery {
             background-color: var(--secondary);
